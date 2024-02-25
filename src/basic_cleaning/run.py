@@ -60,14 +60,21 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="This steps cleans the data")
 
     parser.add_argument(
-        "--input_artifect",
+        "--input_artifact",
         type=str,
         help="Input artifact name",
         required=True
     )
 
     parser.add_argument(
-        "--output_artifect",
+        "--output_type",
+        type=str,
+        help="Type of the artifact",
+        required=True
+    )
+
+    parser.add_argument(
+        "--output_artifact",
         type=str,
         help="Output artifact name",
         required=True

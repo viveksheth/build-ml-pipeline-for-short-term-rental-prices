@@ -5,12 +5,16 @@ entry_points:
   main:
     parameters:
 
-      input_artifect:
+      input_artifact:
         description: Input csv data to be cleaned
         type: string
 
-      output_artifect:
+      output_artifact:
         description: Cleaned csv data to save
+        type: string
+      
+      output_type:
+        description: Type of the artifact to create
         type: string
 
       output_description:
@@ -27,4 +31,4 @@ entry_points:
 
 
     command: >-
-        python run.py  --input_artifect {input_artifect} --output_artifect {output_artifect} --output_description {output_description} --min_price {min_price} --max_price {max_price}
+         python run.py  --input_artifact {input_artifact}  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description}  --min_price {min_price}  --max_price {max_price} 
