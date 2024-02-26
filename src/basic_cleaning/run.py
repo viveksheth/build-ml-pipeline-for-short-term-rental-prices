@@ -89,14 +89,14 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--min_price",
-        type=int,
+        type=float,
         help="Minimum price for cleaning outliers",
         required=True
     )
 
     parser.add_argument(
         "--max_price",
-        type=int,
+        type=float,
         help="Maximum price for cleaning outliers",
         required=True
     )
